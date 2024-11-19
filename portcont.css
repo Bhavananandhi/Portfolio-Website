@@ -1,0 +1,142 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5e8d8, #f0d5c1);
+    color: #4a3f35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #4a3f35;
+}
+
+header span {
+    color: #d2a679;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #7a6e65;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #d2a679;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: transparent;
+    color: #4a3f35;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #a57b5c;
+    box-shadow: 0 0 5px rgba(165, 123, 92, 0.5);
+}
+
+label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-size: 1rem;
+    color: #7a6e65;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+input:focus + label, 
+textarea:focus + label, 
+input:not(:placeholder-shown) + label, 
+textarea:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #a57b5c;
+    background: #fff;
+    padding: 0 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #d2a679;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #b38963;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #d2a679;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #4a3f35;
+    margin-bottom: 1rem;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-details a {
+    color: #d2a679;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #b38963;
+}

@@ -1,0 +1,189 @@
+body{
+    margin:0;
+}
+.header{
+    display:flex;
+    background-color: #FAEBD7;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+}
+span{
+    font-family: "Bellota", system-ui;
+    font-weight: 350;
+    font-style: normal;
+
+    color:rgb(31, 30, 30);
+}
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 30px; /* Spacing between the icons */
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 35px; /* Adjust icon size */
+    height: 35px;
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+.nav li{
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    margin-left:15px ;
+    color:rgb(31, 30, 30);
+    font-family: "Bellota", system-ui;
+    display:block;
+    transition:all 0.3s ease-out;
+    font-weight:20px;
+    font-size:18px;
+    
+}
+.nav{
+    display:flex;
+}
+.nav a:hover{
+    color:darkgray;
+    transform: rotate(6deg);
+}
+.nav-a{
+    margin-right:20px;
+
+    
+}
+@keyframes popIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: scale(0.8); /* Start slightly smaller */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: scale(1); /* End at full size */
+    }
+}
+.photo {
+    position: absolute;
+    margin-left:40px;
+    right:3rem;
+    top: 5%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 400px;
+    height: 450px;
+    background: url('https://i.postimg.cc/tTCyBTpg/prot-final.png') no-repeat center/cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    animation: popIn 1s ease-in forwards; /* Apply the pop-in animation */
+    opacity: 0; /* Ensure opacity starts at 0 for animation */
+    animation-delay: 1.5s;
+  }
+  
+  .photo:hover {
+    transform: translateY(-50%) scale(1.05) rotate(5deg);
+  }
+.p1{
+    
+    padding:60px 45px 0 65px;
+    margin:0;
+
+}
+.p2{
+    padding:10px 60px 0 20px;
+    display:grid;
+    grid-template-columns:40% 50%;
+    grid-column-gap:15%;
+    margin:0;
+    position: relative; /* Add this line */
+
+}
+.f1{
+    margin-left:20px;
+}
+
+
+.f1 span{
+    color: rgb(252, 132, 89);
+}
+.f1 h1{
+   margin-top:50px; 
+   margin-bottom:20px;
+   font-family: "Bellota", system-ui;
+   font-size: 60px;
+   text-shadow: 2px 2px 8px #ff6347;
+
+}
+.f1 p{
+    font-family: sans-serif;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 20px;
+   
+}
+.hey input{
+   text-decoration:none;
+   background-color:rgb(171, 71, 71) ;
+   color:white;
+   border-radius: 8px;
+   padding:15px 25px;
+   display: inline-block;
+}
+.hey a:hover{
+    color: brown;
+}
+.p4{
+    background-color: bisque;
+    padding:40px 60px;
+   text-align: center;
+}
+.p4 span{
+    color: rgb(89, 44, 12);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(20px); /* Move down slightly */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+.f1 h1,
+.f1 p {
+    animation: fadeIn 1s ease-in forwards; /* Apply animation */
+    opacity: 0; /* Ensure opacity starts at 0 for animation */
+}
+
+.f1 h1 {
+    animation-delay: 0.5s; /* Delay for the heading */
+}
+
+.f1 p {
+    animation-delay: 1s; /* Delay for the paragraph */
+}
+.download-button {
+    display: inline-block; /* Makes the link behave like a block element */
+    background-color: brown; /* Background color */
+    color: black; /* Text color */
+    border: 2px solid black; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    text-decoration: none; /* Removes underline */
+    font-size: 18px; /* Increase font size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    margin-bottom:100px;
+    margin-top:25px;
+}
+
+.download-button:hover {
+    background-color: darkred; /* Darker brown on hover */
+    color: white; /* Change text color on hover */
+}
